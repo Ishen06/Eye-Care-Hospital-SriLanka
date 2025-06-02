@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Form</title>
+    <link rel="stylesheet" href="stylesheet3.css">
+    <link rel="icon" href="icon.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+    <nav>
+        <img id="img2" src="logoK.png" width="400px" height="105px">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="appointment1.html">Book an Appointment</a></li>
+            <li><a href="pay.html">Online Payments</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="specs.html">Clinic Store</a></li>  
+        </ul>
+    </nav>
+    <div id="img1">
+        <form id="loginForm" action="login.php" method="post">
+            <br>
+            <center>
+                <div class="input-box">
+                    <br><br><br><br>
+                    <label id="l1">Email Address</label><br><br>
+                    <input type="email" id="txt" name="EmailAddress" placeholder="Enter your email address" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <br><br>
+
+                <div class="input-box">
+                    <label id="l1">Password</label><br><br>
+                    <input type="password" id="password" name="Password" placeholder="Enter your password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <div id="Password">
+                    <input type="checkbox" id="showPassword" onclick="togglePassword()">
+                    <label for="showPassword">Show Password</label>
+                </div>
+
+                <script>
+                    function togglePassword() {
+                        var passwordInput = document.getElementById('password');
+                        var showPasswordCheckbox = document.getElementById('showPassword');
+                        if (showPasswordCheckbox.checked) {
+                            passwordInput.type = 'text';
+                        } else {
+                            passwordInput.type = 'password';
+                        }
+                    }
+
+                    $(document).ready(function() {
+                        $('#loginForm').submit(function(event) {
+                            event.preventDefault();
+
+                            var formData = $(this).serialize();
+
+                            $.ajax({
+                                type: 'POST',
+                                url: $(this).attr('action'),
+                                data: formData,
+                                success: function(response) {
+                                    alert('You have logged in successfully');
+                                    window.location.href = 'dashboard.html'; 
+                                },
+                                error: function(xhr, status, error) {
+                                    console.error(xhr.responseText);
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </center>
+
+            <br>
+            <button id="pwd"><a id="link2" href="password.html">Forgot Password?</a></button>
+
+            <br><br>
+            <button id="submit1" class="submit1" value="Submit">LOGIN</button>
+
+            <br>
+            <div id="account1">
+                <button id="account">No account?</button>
+                <button id="btn1"><a id="link1" href="signin.html">Create one!</a></button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

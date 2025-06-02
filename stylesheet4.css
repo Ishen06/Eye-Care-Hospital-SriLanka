@@ -1,0 +1,78 @@
+#body{
+    background-image: url("bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 667px;
+    background-position: center;
+}
+#form{
+    background-color: rgb(2, 20, 59);;
+    height: 630px;
+    width: 800px;
+    opacity: 0.7;
+    margin-left: 350px;
+    margin-top: 50px;
+}
+#label{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+#username{
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    height: 30px;
+    border-color: white;
+}
+#new_password{
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    height: 30px;
+    border-color: white;
+}
+#confirm_password{
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    width: 400px;
+    text-align: center;
+    height: 30px;
+    border-color: white;
+}
+#submit{
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: navy;
+    background-color:rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    transition: background-color color 0.3s;
+}
+#submit:hover{
+    background-color: rgb(2, 81, 207);
+    color: white;
+}
+#back{
+    margin-top: 92px;
+    text-align: center;
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+    background-color: navy;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+#back:hover{
+    background-color: rgb(34, 127, 214);
+}

@@ -1,0 +1,88 @@
+#body{
+    background-image: url("emergancy-banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+}
+nav{
+    background-color: lightseagreen;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap; 
+    margin-top: -5px;
+}
+ul li{
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    margin: 10px 30px;
+}
+ul li a{
+    position: absolute;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: -95px;
+    position: relative;
+    border-bottom:  5px solid;
+    border-bottom-color:lightseagreen;
+    transition: 0.3s border-bottom-color;
+}
+ul li a:hover{
+    border-bottom-color: white;
+    text-decoration: none;
+}
+.container{
+    background-color: rgb(12, 57, 97);
+    width: 600px;
+    height: 575px;
+    margin-left: 500px;
+    margin-top: 20px;
+    text-align: center;
+}
+input{
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    width: 160px;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+.form-group input ::placeholder{
+    color: white;
+}
+.n1{
+    width: 450px;
+    height: 50px;
+}
+.n2{
+    width: 450px;
+    height: 35px;
+}
+.n3{
+    width: 219px;
+    height: 35px;
+}
+h1{
+    color: white;
+}
+#submit{
+    width: 160px;
+    height: 45px;
+    color: navy;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color color 0.3s;
+}
+#submit:hover{
+    background-color: rgb(5, 112, 198);
+    color: white;
+}

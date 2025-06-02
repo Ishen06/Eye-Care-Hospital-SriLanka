@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="stylesheet8.css">
+    <link rel="icon" href="icon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #d5f0f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin-top: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: navy;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color:#3727eb;
+}
+
+form .social-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+form .social-profile input {
+    width: 48%;
+}
+#form1{
+    margin-left: 20px;
+    width: 250px;
+}
+#form2{
+    margin-left: 320px;
+    width: 250px;
+    margin-top: -490px;
+}
+#comment{
+    width: 260px;
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+
+.appointment-type button{
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 10px;
+    margin-left: -10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.time-slots button {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.appointment-type button:hover {
+    background-color:  lightseagreen;
+    color: #fff;
+    border-color:  lightseagreen;
+}
+
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar button {
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.time-slots button:hover {
+    background-color: lightseagreen;
+    color: #f7f8fc;
+}
+
+.schedule{
+    background-color: navy;
+    cursor: pointer;
+    width: 600px;
+    height: 40px;
+    border: none;
+    color: #f7f8fc;
+    font-weight: 500;
+    border-radius: 7px;
+    font-size: 17px;
+    margin-top: 25px;
+}
+.schedule:hover{
+    background-color:#3727eb;
+}
+#btns1{
+    margin-left: 30px;
+    width: 270px;
+}
+#btns2{
+    margin-left: 330px;
+    margin-top: -142px;  
+}
+
+h3{
+    margin-left: 25px;
+}
+
+.btnn2{
+    margin-left: 40px;
+}
+
+    </style>
+</head>
+<body>
+    <form id="appointmentForm" class="form" action="appointment1.php" method="post">
+        <h1>Book An Appointment</h1><br>
+        <div id="form1">
+            <label for="First_Name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="PhoneNumber">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required><br><br>
+
+            <label for="appointment_date">Appointment Date:</label>
+            <input type="date" id="date" name="appointment_date" required><br><br>
+
+            <label for="hours">Number of Hours:</label>
+            <input type="text" id="number_hours" name="number_hours" required><br><br>
+
+            <label for="time-slots">Select a Time:</label>
+            <input type="radio" id="btn8" class="btnn2" name="appointment_time" value="8:00am">8:00am
+            <input type="radio" id="btn9" class="btnn2" name="appointment_time" value="9:30am">9:30am<br>
+            <input type="radio" id="btn10" class="btnn2" name="appointment_time" value="10:30am">10:30am
+            <input type="radio" id="btn11" class="btnn2" name="appointment_time" value="11:00am">11:00am<br>
+            <input type="radio" id="btn12" class="btnn2" name="appointment_time" value="12:00pm">12:00pm
+            <input type="radio" id="btn13" class="btnn2" name="appointment_time" value="2:00pm">2:00pm<br>
+            <input type="radio" id="btn14" class="btnn2" name="appointment_time" value="3:00pm">3:00pm
+            <input type="radio" id="btn15" class="btnn2" name="appointment_time" value="4:00pm">4:00pm<br><br>
+        
+        </div>
+        <br>
+        
+        <div id="form2">
+            <label for="Last_Name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email_address" name="email_address" required><br><br>
+
+            <label for="visited">Visited the clinic before?</label>
+            <input type="checkbox" id="yes" name="yes">Yes<br>
+            <input type="checkbox" id="no" name="no">No<br><br><br>
+
+            <label for="comments">Comment: (optional)</label>
+            <textarea id="comment" name="comment"></textarea>
+        </div>
+
+        <input type="submit" class="schedule" value="Scheduled">  
+
+        <script>
+            $(document).ready(function() {
+                $('#appointmentForm').submit(function(event) {
+                    event.preventDefault();
+
+                    var formData = $(this).serialize();
+
+                    $.ajax({
+                        type: 'POST',
+                        url: $(this).attr('action'),
+                        data: formData,
+                        success: function(response) {
+                            alert('Data has been submitted successfully.');
+                            window.location.href = 'pay.html'; 
+                        },
+                        error: function(xhr, status, error) {
+                            console.error(xhr.responseText);
+                        }
+                    });
+                });
+            });
+        </script>
+    </form>
+</body>
+</html>
+

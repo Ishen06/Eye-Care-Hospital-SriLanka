@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="stylesheet10.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Payment Form</h1>
+        <form id="PaymentForm" action="pay.php" method="post">
+            <div class="section">
+                <h2>Account</h2>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" name="firstname" placeholder="First Name" required>
+                        <input type="text" name="lastname" placeholder="Last Name" required>
+                        <input type="email" name="emailaddress" placeholder="Email Address" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+
+                <h2>Gender</h2>
+                <button type="button" id="btn1" class="gender-btn">Male</button>
+                <button type="button" id="btn2" class="gender-btn">Female</button>
+            </div>
+
+            <div class="section1">
+                <h2>Payment Details</h2>
+                <button type="button" id="btn3" class="payment-btn">Credit Card</button>
+                <button type="button" id="btn4" class="payment-btn">Debit Card</button><br><br><br><br>
+
+                <input type="text" id="card" placeholder="Card Number" name="cardnumber" required>
+                <input type="text" id="cvc" placeholder="CVC" name="cvc" required>
+                <input type="text" id="date" placeholder="Amount" name="amount" required>
+                <br><br><br>
+                <button type="submit" class="pay-btn">PAY NOW</button>
+
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const button = document.getElementById('btn1');
+
+                    button.addEventListener('click', function () {
+                        if (!button.classList.contains('clicked')) {
+                            button.classList.add('clicked');
+                            button.disabled = true;
+                        }
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const button = document.getElementById('btn2');
+
+                    button.addEventListener('click', function () {
+                        if (!button.classList.contains('clicked')) {
+                            button.classList.add('clicked');
+                            button.disabled = true;
+                        }
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const button = document.getElementById('btn3');
+
+                    button.addEventListener('click', function () {
+                        if (!button.classList.contains('clicked')) {
+                            button.classList.add('clicked');
+                            button.disabled = true;
+                        }
+                    });
+                });
+
+                document.addEventListener('DOMContentLoaded', function () {
+                    const button = document.getElementById('btn4');
+
+                    button.addEventListener('click', function () {
+                        if (!button.classList.contains('clicked')) {
+                            button.classList.add('clicked');
+                            button.disabled = true;
+                        }
+                    });
+                });
+
+                    $(document).ready(function() {
+                        $('#PaymentForm').submit(function(event) {
+                            event.preventDefault();
+
+                            var formData = $(this).serialize();
+
+                            $.ajax({
+                                type: 'POST',
+                                url: $(this).attr('action'),
+                                data: formData,
+                                success: function(response) {
+                                    alert('You have paid successfully');
+                                    window.location.href = 'dashboard.html'; 
+                                },
+                                error: function(xhr, status, error) {
+                                    console.error(xhr.responseText);
+                                }
+                            });
+                        });
+                    });
+                
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,591 @@
+#body{
+    background-color: navy
+}
+#image{
+    font-size: 25px;
+    background-color: white;
+    transition: color 0.5s;
+}
+#image:hover{
+    color: black;
+}
+#nav{
+    background-color: lightseagreen;
+    width: 757px;
+    height: 30px;
+    margin-top: -7px;
+}
+#k1{
+    margin-left: 120px;
+    color:rgb(255, 98, 0);
+    font-size: 20px;
+    font-weight: 1000;
+    margin-top: -70px;
+}
+#k2{
+    margin-left: 120px;
+    color:rgb(255, 98, 0);
+    font-size: 20px;
+    font-weight: 1000;
+    margin-top: -10px;
+}
+#a1{
+    margin-left: 60px;
+}
+#tel1{
+    margin-left: 50px;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+#tel1:hover{
+    color: rgb(6, 49, 87);
+    font-weight: 400;
+}
+#tel2{
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 30px;
+    margin-top: -18px;
+    text-decoration: none;
+    color: white;
+}
+#tel2:hover{
+    color: rgb(6, 49, 87);
+    font-weight: 400;
+}
+#t3{
+    margin-left: 390px;
+    margin-top: -18px;
+}
+#tel3{
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+#tel3:hover{
+    color: rgb(6, 49, 87);
+    font-weight: 400;
+}
+#email1{
+    margin-left: 520px;
+    margin-top: -20px;
+}
+#e1{
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+}
+#e1:hover{
+    color: rgb(6, 49, 87);
+    font-weight: 400;
+}
+#nav1{
+    background-color:rgb(255, 98, 0);
+    height: 30px;
+    width: 750px;
+    margin-left: 752px;
+    margin-top: -47px;
+}
+#pharmacy{
+    margin-top: 5px;
+    margin-left: 100px;
+    text-decoration: none;
+}
+#phrmcy{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#phrmcy:hover{
+    color: black;
+}
+#spectacles{
+    margin-top: -32px;
+    margin-left: 270px;
+}
+#specs{
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+#specs:hover{
+    color: black;
+}
+#photos{
+    margin-top: -35px;
+    margin-left: 370px;
+}
+#gallery{
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+#gallery:hover{
+    color: black;
+}
+#contact{
+    margin-top: -35px;
+    margin-left: 450px;
+}
+#contactUs{
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+#contactUs:hover{
+    color: black;
+}
+#about{
+    margin-top: -35px;
+    margin-left: 620px;
+}
+#aboutUs{
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+#aboutUs:hover{
+    color: black;
+}
+#header{
+    background-color: white;
+    height: 80px;
+}
+.logo1{
+    margin-left: -100px;
+    margin-top: -30px;
+}
+.container{
+    padding: 10px 10%;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap; 
+}
+.li1 li{
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    margin: 10px 30px;
+}
+.li1 li a{
+    position: absolute;
+    padding: 3px;
+    color: lightseagreen;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: -95px;
+    position: relative;
+    border-bottom:  5px solid;
+    border-bottom-color: rgb(255, 255, 255);
+    transition: 0.3s border-bottom-color;
+}
+.li1 li a:hover{
+    border-bottom-color: lightseagreen;
+    text-decoration: none;
+}
+#appointment{
+    color: white;
+    margin-left: 90px;
+    margin-top: -43px;
+    width: 220px;
+    height: 60px;
+    background-color: rgb(51, 104, 164);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    border-radius: 30px;
+}
+#appointment:hover{
+    background-color: navy;
+}
+#box{
+    background-color: white;
+    height: 500px;
+    margin-top: -50px;
+}
+#box1{
+    background-color:navy;
+    width: 760px;
+    height: 467px;
+    margin-top: -470px;
+}
+#img{
+    margin-left: 805px;
+    margin-top: -1px;
+}
+#h1{
+    margin-left: 60px;
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    width: 500px;
+}
+#h2{
+    margin-left: 60px;
+    margin-top: 50px;
+    font-size: 20px;
+    width: 650px;
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+}
+#btn6{
+    margin-left: 55px;
+}
+#btnAppointment{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(247, 247, 247);
+    color: darkblue;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color color 3s;
+}
+#btnAppointment:hover{
+    background-color: rgb(0, 142, 250);
+    color: white;
+}
+.title{
+    font-size: 45px;
+    text-align: center;
+}
+.title1{
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+#box2{
+    margin-left: 55px;
+    margin-top: 50px;
+}
+#label1{
+    background-color: rgb(255, 98, 0);
+    margin-top: -15px;
+    margin-left: 30px;
+    border-width: 1px;
+    border-color: rgb(254, 0, 0);
+    width: 400px;
+    height: 290px;
+    text-align: center;
+    transition: background-color border-color 2s, transform 0.3;
+}
+#label1:hover{
+    background-color: lightseagreen;
+    border-color:aqua;
+    transform: translateY(-30px);
+}
+#doctor{
+    font-size: 23px;
+    margin-top: 10px;
+}
+#imgD{
+    margin-top: -10px;
+    margin-left: 25px;
+}
+#dPara{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#box3{
+    margin-left: 520px;
+    margin-top: -290px;
+}
+#label2{
+    background-color: rgb(255, 98, 0);
+    border-color: rgb(254, 0, 0);
+    border-width: 1px;
+    margin-left: 30px;
+    width: 400px;
+    height: 290px;
+    text-align: center;
+    transition: background-color border-color 0.9s,  transform 0.3;
+}
+#label2:hover{
+    background-color:lightseagreen;
+    border-color:aqua;
+    transform: translateY(-30px);
+}
+#service{
+    font-size: 23px;
+    margin-top: 10px;
+}
+#imgS{
+    margin-top: -5px;
+    margin-left: 25px;
+}
+#sPara{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#box4{
+    margin-left: 1000px;
+    margin-top: -290px;
+}
+#label3{
+    background-color: rgb(255, 98, 0);
+    border-color: rgb(254, 0, 0);
+    border-width: 1px;
+    margin-left: 30px;
+    width: 400px;
+    height: 290px;
+    text-align: center;
+    transition: background-color border-color 0.9s, transform 0.3;
+}
+#label3:hover{
+    background-color: lightseagreen;
+    border-color:aqua;
+    transform: translateY(-30px);
+}
+#service{
+    font-size: 23px;
+    margin-top: 10px;
+}
+#imgS{
+    margin-top: -5px;
+    margin-left: 25px;
+}
+#sPara{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#services{
+    background-color: transparent;
+    height: 430px;
+}
+#fPara{
+    width: 600px;
+    text-align: justify; 
+    font-size: 20px;
+    margin-left: 55px;
+    font-weight: 200;
+    color: white;
+}
+#hr1{
+    width: 1000px;
+    margin-left: -100px;
+}
+#contactID{
+    color: white;
+    margin-left: 60px;
+}
+#contact1{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+#contact1:hover{
+    color: rgb(0, 0, 0);
+}
+#contact2{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#contact2:hover{
+    color: rgb(0, 0, 0);
+}
+#contact3{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+#contact3:hover{
+    color: rgb(0, 0, 0);
+}
+#emailAdd{
+    color: white;
+    margin-left: 60px;
+}
+#gmail{
+    color: white;
+    margin-left: 125px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: -20px;
+}
+#gmail:hover{
+    color: rgb(0, 0, 0);
+}
+#location{
+    color: white;
+    margin-left: 400px;
+    margin-top: -210px;
+}
+#loc{
+    color: white;
+    margin-left: 430px;
+    margin-top: -20px;
+}
+#follow{
+    color: white;
+    margin-left: 400px;
+    margin-top: 60px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: tranform 0.5s;
+    cursor: pointer;
+}
+.layer{
+    color: white;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), lightseagreen);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+    cursor: pointer;
+}
+#txt{
+    width: 450px;
+    height: 35px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+#txt::placeholder{
+    color: white;
+    text-align: center
+}
+#txt1{
+    width: 450px;
+    height: 95px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+#txt1::placeholder{
+    color: white;
+    text-align: center
+}
+.submit1{
+    background-color: rgb(255, 255, 255);
+    color: navy;
+    font-weight: 600;
+    width: 150px;
+    height: 60px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color color 0.5s;
+    margin-top: 35px;
+    margin-left: 150px;
+}
+.submit1:hover{
+    background-color: navy;
+    color: white;
+}
+#h3{
+    font-size: 35px;
+    margin-left: 180px;
+    color: white;
+    margin-top: 15px;
+    width: 300px;
+}
+#imageL{
+    background-color: rgb(12, 57, 97);
+    color: black;
+}
+#footer{
+    height: 525px;
+    width: 1555px;
+    background-color: rgb(12, 57, 97);
+    margin-left: -45px;
+    margin-top: 120px;
+    color: white;
+}
+#image6{
+    font-size: 22px;
+    margin-left: 450px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#image6:hover{
+    background-color: black;
+}
+#image2{
+    font-size: 22px;
+    color: white;
+    margin-left: 400px;
+}
+#image3{
+    font-size: 22px;
+    margin-left: 90px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#image4{
+    font-size: 22px;
+    margin-left: 90px;
+    color: white;
+    transition: background-color 0.5s;
+}
+#form{
+    width: 587px;
+    height: 520px;
+    margin-left: 960px;
+    margin-top: -485px;
+    background-color: rgb(5, 64, 112);
+}
+.contactForm{
+    margin-top: 30px;
+    margin-left: 70px;
+}

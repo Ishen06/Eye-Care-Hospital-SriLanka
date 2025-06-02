@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn Form</title>
+    <link rel="stylesheet" href="stylesheet2.css">
+    <link rel="icon" href="icon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="body">
+    <nav>
+        <img id="img2" src="logoK.png" width="400px" height="105px">
+        <ul>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="appointment1.html">Book an Appointment</a></li>
+            <li><a href="pay.html">Online Payments</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="specs.html">Clinic Store</a></li>
+        </ul>
+    </nav>
+    <center>
+        <div id="form">
+            <form id="registerForm" method="post" action="signin.php">
+                <br><br><br>
+                <div class="input-box">
+                    <label>Email Address</label><br><br>
+                    <input type="email" id="txt" name="EmailAddress" placeholder="Enter your email address" required><br><br><br><br><br><br>
+                </div>
+                <div class="input-box">
+                    <label>Set a Password</label><br><br>
+                    <input type="password" id="txt" name="Password" placeholder="Enter the passsword" required><br><br><br><br><br><br>
+                </div>
+
+                <input type="submit" id="submit" value="Register">
+                
+                <script>
+                    $(document).ready(function() {
+                        $('#registerForm').submit(function(event) {
+                            event.preventDefault();
+
+                            var formData = $(this).serialize();
+
+                            $.ajax({
+                                type: 'POST',
+                                url: $(this).attr('action'),
+                                data: formData,
+                                success: function(response) {
+                                    alert('Data has been submitted successfully.');
+                                    window.location.href = 'login.html'; 
+                                },
+                                error: function(xhr, status, error) {
+                                    console.error(xhr.responseText);
+                                }
+                            });
+                        });
+                    });
+                </script>
+            </form>   
+        </div>    
+    </center>
+</body>
+</html>

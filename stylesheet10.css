@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bbedec;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 700px;  
+    height: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #051469;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #02758f;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section1 {
+    margin-bottom: 40px;
+}
+
+.section2 {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.payment-btn{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s, color 0.3s border-color;
+}
+.payment-btn:hover{
+    background-color: lightseagreen;
+    border-color: lightseagreen;
+    color: white;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #343436;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.date-of-birth {
+    display: flex;
+    gap: 5px;
+}
+
+#t1{
+    width: 90px;
+    border: 1px solid #343436;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+#t1::placeholder{
+    text-align: center;
+}
+
+.gender-btn {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid grey;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s, color 0.3s border-color;
+}
+.gender-btn:hover{
+    background-color: lightseagreen;
+    color: white;
+    border-color: lightseagreen;
+}
+
+.pay-btn {
+    width: 100%;
+    background-color: #0d0b74;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pay-btn:hover {
+    background-color: #0b013e;
+}
+
+select {
+    width: calc(50% - 5px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+select:last-child {
+    margin-right: 0;
+}
+
+#card{
+    width: 270px;
+    height: 30px;
+}
+#card::placeholder{
+    text-align: center;
+}
+
+#cvc{
+    width: 200px;
+    height: 30px;
+}
+#cvc::placeholder{
+    text-align: center;
+}
+
+#date{
+    width: 180px;
+    height: 30px;
+}
+#date::placeholder{
+    text-align: center;
+}
+
+#btn1.clicked{
+    background-color: lightseagreen;
+    font-weight: 500;
+    color: white;
+}
+
+#btn2.clicked{
+    background-color: lightseagreen;
+    font-weight: 500;
+    color: white;
+}
+
+#btn3.clicked{
+    background-color: lightseagreen;
+    font-weight: 500;
+    color: white;
+}
+
+#btn4.clicked{
+    background-color: lightseagreen;
+    font-weight: 500;
+    color: white;
+}

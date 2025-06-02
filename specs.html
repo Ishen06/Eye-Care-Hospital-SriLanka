@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Store</title>
+    <link rel="icon" href="icon.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #02055b;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .banner {
+            background-color: #add7e0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            margin: 0;
+            color: #13327b;
+        }
+
+        .banner button {
+            padding: 10px 20px;
+            background-color: #13247b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .category1 {
+            width: 150px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .category1 img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .category1 p {
+            margin: 10px 0 0;
+            color: #002fff;
+        }
+
+        .category2 {
+            width: 150px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .category2 img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .category2 p {
+            margin: 10px 0 0;
+            color: #002fff;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #080a68;
+            color: white;
+        }
+
+        #p1 {
+            color: white;
+        }
+
+        #search {
+            width: 200px;
+            margin-right: 200px;
+        }
+
+        .header input[type="search"] {
+            padding: 5px;
+            width: 250px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+
+        ul li a:hover {
+            color: lightseagreen;
+        }
+
+        #nav{
+            margin-right: 100px;
+        }
+
+        #btn1 a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="logoK.png" width="350px" height="100px">
+        <div id="search">
+            <input type="search" placeholder="Search">
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="specs.html">Shop</a></li>
+                <li><a href="pay.html">Online Payments</a></li>
+                <li><a href="pharmacy1.html">Pharmacy</a></li>
+            </ul>
+        </div>  
+    </header>
+
+    <div class="banner">
+        <h1>Cozy Fall Savings</h1>
+        <p>Starting From Rs.1000</p>
+    </div>
+
+    <section class="categories">
+        <div class="category1">
+            <img src="specs1.png" alt="Product 1" height="150px" width="250px">
+            <p>Up to 5% off</p>
+        </div>
+        <div class="category1">
+            <img src="specs2.png" alt="Product 2" height="150px" width="250px">
+            <p>Up to 5% off</p>
+        </div>
+        <div class="category1">
+            <img src="specs3.png" alt="Product 3" height="150px" width="250px">
+            <p>Up to 7% off</p>
+        </div>
+        <div class="category1">
+            <img src="specs4.png" alt="Product 4" height="150px" width="250px">
+            <p>Up to 7% off</p>
+        </div>
+       <br>
+    </section>
+
+    <section class="categories">
+        <div class="category2">
+            <img src="glasses1.png" alt="Product 8" height="150px" width="250px">
+            <p>Up to 5% off</p>
+        </div>
+        <div class="category2">
+            <img src="glasses2.png" alt="Product 9" height="150px" width="250px">
+            <p>Up to 7% off</p>
+        </div>
+        <div class="category2">
+            <img src="glasses3.png" alt="Product 10" height="150px" width="250px">
+            <p>Up to 7% off</p>
+        </div>
+        <div class="category2">
+            <img src="glasses4.png" alt="Product 11" height="150px" width="250px">
+            <p>Up to 5% off</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Safe payments | Secure logistics | Secure privacy | Purchase protection</p>
+        <p>Temu keeps you safe</p>
+    </footer>
+</body>
+
+</html>
